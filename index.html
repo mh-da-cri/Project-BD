@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật em yêu!</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Đặt toàn bộ trang thành Flexbox để căn giữa */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;  /* Căn giữa theo chiều ngang */
+            align-items: center;      /* Căn giữa theo chiều dọc */
+            background-color: #f0f8ff; /* Màu nền */
+        }
+
+        /* Căn giữa nội dung trong container */
+        .container {
+            display: flex;
+            flex-direction: column;   /* Đặt các phần tử theo cột */
+            justify-content: center;  /* Căn giữa theo chiều dọc */
+            align-items: center;      /* Căn giữa theo chiều ngang */
+            text-align: center;
+        }
+
+        /* Tùy chỉnh video */
+        #birthdayVideo {
+            display: none; /* Ẩn video trước khi nhấn nút */
+            width: 320px;
+            height: 240px;
+        }
+
+        /* Nút nhấn để hiển thị video */
+        .celebrate-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Hiệu ứng hover cho nút */
+        .celebrate-btn:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="birthday-heading">Hép pi pớt day, em pé Kim Ngọtttt!</h1>
+        <p class="birthday-message">Lại mụt tuổi mới bên nhao và anh lại có thêm cơ hội để làm điều dì đó cho em và đây chính là điều dì đó nòoo! 🎂❤️</p>
+
+        <div class="heart-container">
+            <div class="heart" id="heart1"></div>
+            <div class="heart" id="heart2"></div>
+            <div class="heart" id="heart3"></div>
+        </div>
+
+        <!-- Video bị ẩn trước khi nhấn nút -->
+        <video id="birthdayVideo" width="320" height="240" controls>
+            <source src= video\BD.mp4 type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+
+        <!-- Nút nhấn để hiển thị video -->
+        <button class="celebrate-btn" onclick="showVideo()">Nhớ đeo tai nghe trước khi nhấn dô nghe hong tui ngại lém ó</button>
+    </div>
+
+    <script>
+        // Hàm hiển thị video khi nhấn nút
+        function showVideo() {
+            var video = document.getElementById("birthdayVideo");
+            video.style.display = "block";  // Hiển thị video
+            video.play();                   // Phát video
+        }
+    </script>
+</body>
+</html>
