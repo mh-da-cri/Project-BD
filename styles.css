@@ -1,9 +1,8 @@
-/* style.css */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Cursive', sans-serif;
-    background-image: url('images/background.jpg'); /* Đặt hình nền */
+    background-image: url('pic\z5216376291150_022bc2e34cf1e16ca5c9ce6f40a53498.jpg'); /* Đặt hình nền */
     background-size: cover; /* Làm cho hình nền phủ toàn bộ trang */
     background-position: center; /* Căn giữa hình nền */
     background-repeat: no-repeat; /* Không lặp lại hình nền */
@@ -16,9 +15,9 @@ body {
 .container {
     text-align: center;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt để nhìn thấy hình nền */
-    border-radius: 25px; /* Bo tròn góc của container */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng cho container */
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt */
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
     width: 80%;
     max-width: 600px;
 }
