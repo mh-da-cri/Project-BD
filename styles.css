@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cursive', sans-serif;
-    background-image: url('pic\z5216376291150_022bc2e34cf1e16ca5c9ce6f40a53498.jpg'); /* Đặt hình nền */
+    background-image: url('pic/z5216376291150_022bc2e34cf1e16ca5c9ce6f40a53498.jpg'); /* Đặt hình nền */
     background-size: cover; /* Làm cho hình nền phủ toàn bộ trang */
     background-position: center; /* Căn giữa hình nền */
     background-repeat: no-repeat; /* Không lặp lại hình nền */
